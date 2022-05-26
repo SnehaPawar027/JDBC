@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+	<bean class="com.xworkz.camera.bean.Camera">
+		<constructor-arg value="Canon" type="String"></constructor-arg>
+		<constructor-arg value="DSLR" type="String"></constructor-arg>
+		<constructor-arg value="2" type="int"></constructor-arg>
+		<property name="cost" value="39500"></property>
+		<property name="pixels" value="112"></property>
+		<property name="weight" value="1.24kg"></property>
+	</bean>
+
+	<bean class="java.lang.Double">
+		<constructor-arg value="55.32" type="double"></constructor-arg>
+	</bean>
+
+	<bean class="java.lang.Boolean">
+		<constructor-arg value="true" type="boolean"></constructor-arg>
+	</bean>
+
+	<bean class="java.lang.Character">
+		<constructor-arg value="C"></constructor-arg>
+	</bean>
+
+	<bean class="java.lang.Float">
+		<constructor-arg value="65.0" type="float"></constructor-arg>
+	</bean>
+
+	<bean class="java.math.BigDecimal">
+		<constructor-arg value="9900234671894582561"
+			type="BigInteger"></constructor-arg>
+	</bean>
+
+	<bean class="java.lang.StringBuffer" id="String">
+		<constructor-arg value="String default constructor"
+			type="String"></constructor-arg>
+	</bean>
+
+	<bean class="java.lang.StringBuffer" id="str">
+		<constructor-arg value="str" type="String"></constructor-arg>
+	</bean>
+
+	<bean class="java.lang.StringBuffer" id="16">
+		<constructor-arg value="16" type="int"></constructor-arg>
+	</bean>
+
+
+
+
+
+
+
+
+
+
+</beans>
