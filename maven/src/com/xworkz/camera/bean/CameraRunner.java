@@ -31,13 +31,13 @@ public class CameraRunner {
 		BigDecimal bigDecimalValue = applicationContext.getBean(BigDecimal.class);
 		System.out.println(bigDecimalValue);
 
-		StringBuffer strb1 = applicationContext.getBean("1", StringBuffer.class);
+		StringBuffer strb1 = applicationContext.getBean("String", StringBuffer.class);
 		System.out.println(strb1);
 
-		StringBuffer strb2 = applicationContext.getBean("2", StringBuffer.class);
+		StringBuffer strb2 = applicationContext.getBean("str", StringBuffer.class);
 		System.out.println(strb2);
 
-		StringBuffer strb3 = applicationContext.getBean("3", StringBuffer.class);
+		StringBuffer strb3 = applicationContext.getBean("16", StringBuffer.class);
 		System.out.println(strb3.capacity());
 
 	}
