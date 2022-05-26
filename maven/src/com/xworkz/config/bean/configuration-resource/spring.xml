@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+	<bean class="com.xworkz.config.bean.ConfigurationSpring"
+		id="flowers">
+
+		<property name="flowerList">
+			<list>
+				<value>Sunflower</value>
+				<value>Rose</value>
+				<value>Lily</value>
+				<value>Lotus</value>
+				<value>Penoy</value>
+
+			</list>
+
+		</property>
+
+		<property name="Set">
+			<set>
+				<value>RaniChannamma-Express</value>
+				<value>Golgumbaj-Express</value>
+				<value>Bangalore-Express</value>
+				<value>Mysore-Express</value>
+
+			</set>
+		</property>
+
+		<property name="Map">
+			<map>
+				<entry key="Doctors" value="Hospital" />
+				<entry key="108" value="Ambulance" />
+				<entry key="Employes" value="Nurses" />
+
+			</map>
+		</property>
+
+		<property name="properties">
+		
+			<prop key="Student">School</prop>
+			<prop key="RollNumber">43</prop>
+			<prop key="DateOfBrith">16-08-2015></prop>
+			<prop key="Place">Bijapur</prop>
+		</property>
+
+	
+
+
+
+
+
+
+
+	</bean>
+</beans>
