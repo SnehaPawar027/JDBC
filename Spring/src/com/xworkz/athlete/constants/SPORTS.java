@@ -1,0 +1,7 @@
+package com.xworkz.athlete.constants;
+
+public enum SPORTS {
+	
+	RUNNING,JUMPING,REALY,WALKING,THROWING,SHOTPUT,SPRINT,RACEWALKING,HURDLES;
+
+}
