@@ -21,9 +21,9 @@ public class CourseRunner {
 		CourseDTO dto4 = new CourseDTO(4, "Dot-Net", 4, 1000.00d, LocalDate.of(2022, 6, 16), true);
 
 		courseService.validate(dto1);
-		 courseService.validate(dto2);
-		 courseService.validate(dto3);
-		 courseService.validate(dto4);
+		courseService.validate(dto2);
+		courseService.validate(dto3);
+		courseService.validate(dto4);
 
 	}
 
