@@ -7,7 +7,7 @@ import com.xworkz.institute.dto.CourseDTO;
 
 public class CourseServiceImpl implements CourseService {
 
-	CourseDAO dao;
+	private CourseDAO dao;
 
 	public CourseServiceImpl(CourseDAO dao) {
 		this.dao = dao;
