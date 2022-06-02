@@ -15,7 +15,7 @@ public class CourseDAOImpl implements CourseDAO {
 	public boolean Save(CourseDTO dto) {
 
 		try (Connection connection = DBConstants.getConnection();
-				PreparedStatement preparedStatement = connection.prepareStatement("Course details are(?,?,?,?,?,?)")) {
+				PreparedStatement preparedStatement = connection.prepareStatement("Insert into coursedata value(?,?,?,?,?,?)")) {
 
 			System.out.println(connection);
 			preparedStatement.setInt(1, dto.getId());

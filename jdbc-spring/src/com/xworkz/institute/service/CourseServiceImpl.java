@@ -25,13 +25,11 @@ public class CourseServiceImpl implements CourseService {
 				System.out.println(" Given id should be greter than 0");
 				return false;
 			}
-			if (dto.getName() != null && !dto.getName().isEmpty() && dto.getName().length() > 3
-					&& dto.getName().length() < 30) {
-				System.out.println(" Given Name is Valid ");
-			} else {
-				System.out.println("Given Name is invalid");
-				return false;
+			if (!(dto.getName() != null && !dto.getName().isEmpty() && dto.getName().length() > 3
+					&& dto.getName().length() < 30)) {
+				System.out.println(" Given Name is inValid ");
 			}
+
 			if (dto.getDuration() < 6 && dto.getDuration() > 0) {
 				System.out.println("course duration is valid");
 			} else {
@@ -47,18 +45,16 @@ public class CourseServiceImpl implements CourseService {
 			if (dto.getStartDate().isAfter(LocalDate.of(2022, 6, 16))) {
 				System.out.println("start date is valid");
 			} else {
-				System.out.println("start date");
+				System.out.println("start date is in valid");
 				return false;
 			}
 			boolean ref = dao.Save(dto);
 			System.out.println(ref);
 			System.out.println("save the data to DataBase " + dto);
-		}
 
-		else {
-			System.out.println("data valide ");
+		}else {
+			System.out.println("dto is null terminating");
 		}
 		return false;
 	}
-
 }

@@ -2,7 +2,7 @@ package com.xworkz.institute.constants;
 
 public enum MySqlProperties {
 	
-	URL("jdbc:mysql://localhost:3306/CourseData"), USERNAME("root"), PASSWORD("9606368947");
+	URL("jdbc:mysql://localhost:3306/institute"), USERNAME("root"), PASSWORD("9606368947");
 
 	private String val;
 
