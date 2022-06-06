@@ -6,14 +6,26 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.time.LocalDate;
 
+import javax.sql.DataSource;
+
 import com.xworkz.institute.constants.DBConstants;
 import com.xworkz.institute.dto.CourseDTO;
 
 public class CourseDAOImpl implements CourseDAO {
-
-	// @Override
+	
+	private DataSource dataSource;
+	
+	public CourseDAOImpl(DataSource dataSource) {
+		
+		this.dataSource = dataSource;
+	}
+	
+	
+	
+	 @Override
 	public boolean Save(CourseDTO dto) {
-
+		 
+		
 		try (Connection connection = DBConstants.getConnection();
 				PreparedStatement preparedStatement = connection.prepareStatement("Insert into coursedata value(?,?,?,?,?,?)")) {
 

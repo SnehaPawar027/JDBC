@@ -7,11 +7,28 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
 
-	<bean class="com.xworkz.institute.dao.CourseDAOImpl" id="courseDAOImpl"></bean>
+	<bean class="com.xworkz.institute.dao.CourseDAOImpl"
+		id="courseDAOImpl"></bean>
 
-	<bean class="com.xworkz.institute.service.CourseServiceImpl" id="courseServiceImpl">
+	<bean class="com.xworkz.institute.service.CourseServiceImpl"
+		id="courseServiceImpl">
 		<constructor-arg ref="courseDAOImpl"></constructor-arg>
 	</bean>
 
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+		id="propertyPlaceholderConfigurer">
+		<property name="location"
+			value="resource/application.properties"></property>
+	</bean>
 
+	<bean
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		id="driverManagerDataSource">
+
+
+		<constructor-arg value="${jdbc.URL}"></constructor-arg>
+		<constructor-arg value="${jdbc.USERNAME}"></constructor-arg>
+		<constructor-arg value="${jdbc.PASSWORD}"></constructor-arg>
+	</bean>
 </beans>
