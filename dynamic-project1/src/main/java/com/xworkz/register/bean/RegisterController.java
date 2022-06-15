@@ -1,0 +1,62 @@
+package com.xworkz.register.bean;
+
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Component
+@RequestMapping("/")
+
+public class RegisterController {
+
+	public RegisterController() {
+		System.out.println("Calling defult consturctor");
+	}
+
+	@RequestMapping("/test.egg")
+	public String OnClick(@RequestParam int price, @RequestParam int quntity) {
+
+		System.out.println("egg");
+		System.out.println(price);
+		System.out.println(quntity);
+
+		return "OnLoad.html";
+
+	}
+	
+	public String OnEgg(@RequestParam  String name,@RequestParam String email,@RequestParam int age,@RequestParam String address,@RequestParam String password,@RequestParam String confirmpassword,@RequestParam String color ) {
+		System.out.println("on egg method running");
+		System.out.println(name);
+		System.out.println(age);
+		System.out.println(address);
+		System.out.println(password);
+		System.out.println(confirmpassword);
+		System.out.println(color);
+		return "Success.html";
+	}
+	
+	public String OnApplicationForm(@RequestParam  String name,@RequestParam String email,@RequestParam int age,@RequestParam String address,@RequestParam String password,@RequestParam String confirmpassword,@RequestParam String color ) {
+		System.out.println("Application form running");
+		System.out.println(name);
+		System.out.println(age);
+		System.out.println(address);
+		System.out.println(password);
+		System.out.println(confirmpassword);
+		System.out.println(color);
+		return "OnLoad.html";
+		
+	}
+	
+	public String OnRegister(@RequestParam  String name,@RequestParam String email,@RequestParam int age,@RequestParam String address,@RequestParam String password,@RequestParam String confirmpassword,@RequestParam String color ) {
+		System.out.println("Register form running");
+		System.out.println(name);
+		System.out.println(age);
+		System.out.println(address);
+		System.out.println(password);
+		System.out.println(confirmpassword);
+		System.out.println(color);
+		return "Success.html";
+		
+	}
+
+}
