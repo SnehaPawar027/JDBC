@@ -63,7 +63,7 @@ Sports	: <select name="sports"><br>
 	</select>
 
 Date Of Birth: <input type="text" name="dob"><br>
-<input type="submit" value="save">
+     <input  style='background-color: blue;' type="submit" value="save">
 
 </pre>
 	</form>
