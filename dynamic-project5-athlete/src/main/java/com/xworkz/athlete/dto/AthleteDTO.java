@@ -1,6 +1,6 @@
 package com.xworkz.athlete.dto;
 
-import java.time.LocalDate;
+//import java.time.LocalDate;
 
 import org.springframework.stereotype.Component;
 
@@ -16,7 +16,7 @@ public class AthleteDTO {
 	private String state;
 	private String city;
 	private String sports;
-	private LocalDate dob;
+	private String dob;
 
 	public AthleteDTO() {
 		System.out.println("default cont running");

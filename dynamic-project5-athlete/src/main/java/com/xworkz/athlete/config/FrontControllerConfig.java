@@ -1,4 +1,4 @@
-package com.xworkz.web.config;
+package com.xworkz.athlete.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
